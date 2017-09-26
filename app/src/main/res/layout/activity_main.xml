@@ -1,20 +1,15 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              tools:context=".MainActivity">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dongnao.carplate.MainActivity">
 
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="click"
-        android:text="车牌检测"
-        />
 
     <ImageView
-        android:id="@+id/image_view"
+        android:id="@+id/src"
         android:layout_width="match_parent"
         android:layout_height="300dp"/>
 
@@ -38,9 +33,23 @@
             android:text="下一张"/>
     </LinearLayout>
 
+    <Button
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click"
+        android:text="识别"/>
+
+
+    <ImageView
+        android:id="@+id/plate"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"/>
+
     <TextView
         android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
         />
 </LinearLayout>
